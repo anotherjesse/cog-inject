@@ -9,6 +9,8 @@ This is a proof of concept that:
 
 On a CPU, without downloading the `base_image`, this uses a small go binary built on [google/go-containerregistry](https://github.com/google/go-containerregistry) to create a new image layer, and push that layer / image metadata to `dest_image`
 
+This uses a prototype go binary built from my [r8im](https://github.com/anotherjesse/r8im) tool.
+
 ## Why?
 
 There are "weights" and there are "models".  Whenever I get new weights (either through dreambooth, AIT, some new model shared on HF/civit/reddit), I want to be able to use them efficiently. 
